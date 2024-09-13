@@ -1,0 +1,35 @@
+<input class="form-control" type="text" value="Input element">
+<button class="btn">Button</button>
+
+<style>
+  .btn, .form-control {
+    /* reset user agent stylesheet */
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    color: inherit;
+    appearance: none;
+
+    /* make sure properties affecting height have same value */
+    font-size: 1em;
+    line-height: 1.2;
+    padding: 0.5em var(--padding-x);
+    border-width: 2px;
+    border-style: solid;
+  }
+  
+  /* button */
+  .btn {
+    display: inline-flex;
+    justify-content: center; /* center the content horizontally */
+    align-items: center; /* center the content vertically */
+    --padding-x: 1.2em;
+    border-color: transparent; /* hide button border */
+  }
+  
+  /* input */
+  .form-control {
+    --padding-x: 0.5em;
+  }
+</style>
